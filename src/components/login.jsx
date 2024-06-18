@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { fetchLogin } from '../services/api';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () =>{
     const [password, setPassword] = useState('');
     const [username, setUsername] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
@@ -11,6 +13,7 @@ const Login = () =>{
             const response = await fetchLogin({password,username});
             alert('Login successful');
             console.log(response);
+            navigate('/products/register');
         }
         catch(error){
             console.error('Login failed', error);
