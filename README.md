@@ -1,4 +1,4 @@
-# This repository has been cloned from my own asignment in CS2031-DBP
+# This repository has been cloned from my own assignment repository in CS2031-DBP
 # PC2 - Frontend
 
 ### Enunciado
