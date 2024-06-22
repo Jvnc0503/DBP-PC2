@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from './components/login'
 import Register from './components/Register';
@@ -10,8 +9,6 @@ import ReadProduct from './components/ReadProduct';
 import DeleteProduct from './components/DeleteProduct';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
       <NavBar />
